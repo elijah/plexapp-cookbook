@@ -28,7 +28,7 @@ end
 
 package [ 'avahi-daemon', 'avahi-utils' ] if platform_family?('debian')
 
-package 'plexmediaserver' do
+dpkg_package 'plexmediaserver' do
   source cached_package_file
 end
 
